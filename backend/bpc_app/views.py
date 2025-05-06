@@ -5,6 +5,16 @@ from rest_framework.response import Response
 from django.db.models import Sum, Avg
 from .models import BPCRegistro
 from .serializers import BPCRegistroSerializer
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+
+
+
+class StatusView(APIView):
+    def get(self, request):
+        return Response({"status": "online"})
+
 
 class BPCRegistroViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = BPCRegistro.objects.all()
@@ -55,3 +65,5 @@ class BPCRegistroViewSet(viewsets.ReadOnlyModelViewSet):
             cidades = self.queryset.filter(uf=uf).values_list('municipio', flat=True).distinct()
             return Response(sorted(list(cidades)))
         return Response([])
+
+
