@@ -1,11 +1,12 @@
-from django.contrib import admin
-from django.urls import path
-from django.http import JsonResponse
+from django.urls import path, include
+from rest_framework import routers
+from .views import BPCRegistroViewSet
+from rest_framework.response import Response
 
-def status_view(request):
-    return JsonResponse({'status': 'online'})
+router = routers.DefaultRouter()
+router.register(r'bpc', BPCRegistroViewSet, basename='bpc')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/status/', status_view),
+    path('api/', include(router.urls)),
+    path('api/status/', lambda req: Response({'status': 'online'})),
 ]
