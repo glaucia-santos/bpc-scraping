@@ -1,1 +1,2 @@
-# Projeto BPC - Análise de Dados com IA e Web Scraping
+# Projeto BPC
+Este projeto realiza análise de dados do BPC com backend em Django e frontend em React.
