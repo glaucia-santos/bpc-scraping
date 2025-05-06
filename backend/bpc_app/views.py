@@ -8,10 +8,7 @@ from .serializers import BPCRegistroSerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-
-
-
-class StatusView(APIView):
+class StatusAPIView(APIView):
     def get(self, request):
         return Response({"status": "online"})
 
