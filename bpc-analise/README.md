@@ -1,0 +1,1 @@
+# Projeto BPC - Análise de Dados com IA e Web Scraping

@@ -1,0 +1,8 @@
+django
+djangorestframework
+requests
+beautifulsoup4
+pandas
+deepdiff
+great_expectations
+psycopg2
