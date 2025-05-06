@@ -1,9 +1,13 @@
-django
-djangorestframework
 requests
 beautifulsoup4
 pandas
 deepdiff
 great_expectations
 psycopg2
-django-cors-headers
+Django==5.2
+djangorestframework==3.16.0
+django-cors-headers==4.7.0
+django-filter
+gunicorn
+numpy
+altair
