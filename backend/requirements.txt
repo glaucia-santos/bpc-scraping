@@ -6,3 +6,4 @@ pandas
 deepdiff
 great_expectations
 psycopg2
+django-cors-headers
