@@ -11,3 +11,5 @@ django-filter
 gunicorn
 numpy
 altair
+selenium
+webdriver-manager

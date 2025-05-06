@@ -1,0 +1,1 @@
+# Django command para baixar e importar automaticamente

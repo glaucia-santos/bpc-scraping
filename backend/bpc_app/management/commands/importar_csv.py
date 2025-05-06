@@ -1,0 +1,1 @@
+# Função importar_arquivo modificada para reutilização

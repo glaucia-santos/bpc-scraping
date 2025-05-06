@@ -1,0 +1,1 @@
+# Código do scraper com Selenium aqui
